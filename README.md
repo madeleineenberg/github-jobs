@@ -3,7 +3,7 @@ The task is to create a react app that lets the user search for jobs using the d
 
 -Description
 The API has the following structure:
-https://jobs.github.com/positions.json?description=javascript
+https://us-central1-wands-2017.cloudfunctions.net/githubjobs?description=javascript
 
 -Add an input field where the user can enter something to search on Add a button to trigger the search
 
@@ -17,7 +17,7 @@ When the user searchs for a specific term (description), list the result returne
 
 -Make sure that the company_url value returned from the API is contained in a a-element
 
--Make sure that the description value returned from the API is contained in a p-element
+-Make sure that the description value returned from the API is contained in a p-element or div-element
 
 -Make sure that the company_logo value returned from the API is added to the src attribute for a img-element
 
