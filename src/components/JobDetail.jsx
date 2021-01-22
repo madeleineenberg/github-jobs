@@ -12,8 +12,6 @@ export default function JobDetail({job}) {
             <div dangerouslySetInnerHTML={{__html: job.description}}></div>
             <span>How to apply:</span><div dangerouslySetInnerHTML={{__html: job.how_to_apply}}></div>
             <p>Posted: {job.created_at}</p>
-            <div>
-            </div>
         </div>
     )
 }

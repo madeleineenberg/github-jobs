@@ -1,31 +1,32 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
+import { JobContext } from '../contexts/JobContext'
 import JobListItem from './JobListItem'
 
 export default function JobList() {
-    const [keyword, setKeyword] = useState(null)
-    const [jobList, SetJobList] = useState(null)
+
+    const { jobList, setJobList, value, setValue } = useContext(JobContext)
+    const [keyword, setKeyword] = useState("")
 
 
-
-    const handleClick = () => {
-        const url = `https://us-central1-wands-2017.cloudfunctions.net/githubjobs?description=${keyword}`
-        console.log(keyword)
+    const fetchJobList = () => {
+        const query = keyword.replace(" ", "+")
+        setValue(keyword)
+        const url = `https://us-central1-wands-2017.cloudfunctions.net/githubjobs?description=${query}`
+       
         fetch(url)
         .then(res => res.json())
         .then(data => {
             console.log(data)
-            SetJobList(data)})
-        
+            setJobList(data)})
+            setKeyword("")
     }
 
-    const handleKeyword = (e) => {
-        if(e.currentTarget.value.includes(" ")){
-            setKeyword(e.currentTarget.value.replace(/\s/g, "+"))
+
+    const handleClick = () => {
+        if(value !== keyword){
+            fetchJobList()
         }
-        else{
-            setKeyword(e.currentTarget.value)
-        }
-        
+        setKeyword("")   
     }
 
     const renderJobList = () => {
@@ -44,7 +45,7 @@ export default function JobList() {
     return (
         <div>     
         <label> Search for jobs:</label>
-        <input type="text" onChange={(e) => handleKeyword(e)}/>
+        <input type="text"  value={keyword} onChange={(e) => setKeyword(e.target.value)}/>
         <button onClick={handleClick}>search</button>
 
             {renderJobList()}
