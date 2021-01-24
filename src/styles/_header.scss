@@ -1,0 +1,93 @@
+header {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    min-width: 100%;
+    background-color: #7550A6;
+    box-shadow: 0 1px 15px 0 rgba( 31, 38, 135, 0.37 );
+    z-index: 10;
+    margin-top: -100px;
+
+    &:after{
+        content: "GITHUB JOBS";
+        font-size: 98px;
+        font-weight: 800;
+        letter-spacing: 5px;
+        width: 100%;
+        height: auto;
+        color: #f9b9bdc0;
+        text-align: center;
+       font-family: "Poppins", sans-serif;
+       z-index: -1;
+       position: absolute;
+       bottom:60px;
+      
+    
+    }
+    
+  
+
+
+    h1 {
+        position: absolute;
+        top: 0px;
+        left:0;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: 2px;
+        color: rgb(243, 222, 222);
+        padding: 25px;
+    }
+
+    .icon-github-2{
+        font-size: 30px;
+        color: #272727;
+        position: absolute;
+        top: 30px;
+        left:238px;
+    }
+
+    .input-container{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+}
+
+.card-container{
+align-self: stretch;
+background: rgba( 255, 255, 255, 0.30 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 7.5px );
+border-radius: 10px;
+max-width: 600px;
+padding: 3%;
+margin:  5%; 
+z-index: 1;
+
+// &:before{
+//     content: "Git Hub job";
+//     font-size: 48px;
+//     width: 100%;
+//     height: auto;
+//     color: #F9B9BD;
+//     text-align: center;
+
+// }
+}
+
+.container {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+
+}

@@ -7,7 +7,7 @@ export default function JobListItem({props: {id, company, title, type, company_u
 
     
     return (
-        <div>
+        <div className="card-container">
            <Link to={`/job/${id}`}><h2>{title}</h2></Link>
             <Logo logo={company_logo}/>
             <span>Company: <a href={company_url} target="blank" rel="noopener">{company}</a></span>
