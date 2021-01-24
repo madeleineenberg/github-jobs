@@ -39,7 +39,12 @@ describe("Test 'JobDetail.jsx component", ()=> {
         expect(wrapper.find('p>a').prop('href')).toBe('company_url')
     })
     it("renders div-element for 'description' correctly", ()=> {
-        console.log(wrapper.debug())
-        expect(wrapper.find('div > div').at(0).text()).toBe('description')
+        expect(wrapper.html('div > div')).toContain('description')
+    })
+    it("renders div-element for 'how_to_apply' correctly", ()=> {
+        expect(wrapper.html('span > div')).toContain('how_to_apply')
+    })
+    it("renders p for 'created_at' correctly", ()=> {
+        expect(wrapper.find('div > p').at(1).text()).toBe('Posted: created_at')
     })
 })
