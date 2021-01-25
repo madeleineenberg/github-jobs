@@ -1,13 +1,13 @@
 header {
     
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-    min-width: 100%;
-    background-color: #7550A6;
-    box-shadow: 0 1px 15px 0 rgba( 31, 38, 135, 0.37 );
-    z-index: 10;
-    margin-top: -100px;
+background-size: cover;
+background-repeat: no-repeat;
+height: 500px;
+min-width: 100%;
+background-color: #7550A6;
+box-shadow: 0 1px 15px 0 rgba( 31, 38, 135, 0.37 );
+z-index: 10;
+margin-top: -100px;
 
     &:after{
         content: "GITHUB JOBS";
@@ -18,12 +18,11 @@ header {
         height: auto;
         color: #f9b9bdc0;
         text-align: center;
-       font-family: "Poppins", sans-serif;
-       z-index: -1;
-       position: absolute;
-       bottom:60px;
+        font-family: "Poppins", sans-serif;
+        z-index: -1;
+        position: absolute;
+        bottom:60px;
       
-    
     }
     
     h1 {

@@ -1,0 +1,136 @@
+.detail_page-container{
+
+    padding: 10% 0;
+    
+
+    h1 {
+        position: absolute;
+        top: 0px;
+        left:0;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: 2px;
+        color: rgb(243, 222, 222);
+        padding: 25px;
+    }
+
+    .icon-github-2{
+        font-size: 30px;
+        color: #272727;
+        position: absolute;
+        top: 30px;
+        left:238px;
+    }
+
+    a {
+        text-decoration: none;
+        margin-left: 20px;
+        letter-spacing: 2px;
+        color: #7550A6;
+        transition: all ease-in 0.5s;
+        cursor: pointer;
+
+        &:hover{
+            color: whitesmoke;
+        }
+    }
+
+    .job-detail{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 30px 350px 20px 20px 1fr;
+        grid-gap: 10px;
+        background: rgba( 255, 255, 255, 0.10 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 7.5px );
+        border-radius: 10px;
+        max-width: 900px;
+        padding: 3%;
+        margin:  5% auto; 
+
+        h2{
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 38px;
+            color: #7550A6;
+            margin-top: 20px;
+            grid-column: 1;
+            place-self: center;
+        }
+
+        h3{
+            grid-column: 1;
+            font-size: 22px;
+            color: #272727;
+            
+        }
+        .website-link{
+            grid-column: 1;
+            grid-row: 4;
+        }
+
+        .logo-wrapper {
+            position: relative;
+            background-color: white;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid peachpuff;
+            grid-column: 2;
+            grid-row: 2;
+            place-self: center;
+
+            
+            img {
+                width: 300px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+    
+            }
+        }
+
+        .description {
+            grid-column: 1 / span 2;
+            grid-row: 5;
+            background: rgba( 255, 255, 255, 0.10 );
+            backdrop-filter: blur( 7.5px );
+            border-radius: 10px;
+            padding: 5%;
+            margin-top: 20px;
+            color: #272727;
+
+            ul {
+                list-style: circle;
+                padding-left: 20px;
+            }
+    
+            p {
+                padding: 10px 0;
+                line-height: 17px;
+            } 
+        }
+
+        .apply {
+            grid-column: 1 / span 2;
+            grid-row: 6;
+            background: rgba( 255, 255, 255, 0.10 );
+            backdrop-filter: blur( 7.5px );
+            border-radius: 10px;
+            padding: 5%;  
+
+        }
+
+        .posted{
+            grid-row: 7 ;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+    }
+}

@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react'
+import {Link} from 'react-router-dom';
 import JobDetail from '../components/JobDetail'
+import Title from '../components/Title'
 
 export default function JobDetailPage(props) {
     const id = props.match.params.id
@@ -17,8 +19,10 @@ export default function JobDetailPage(props) {
     }, [])
 
     return (
-        <div>
-            Job Detail
+        <div className="detail_page-container">
+            <Title/>
+            <Link to="/"><i className="icon-left-big"/>Back</Link>
+            
             {job && (
             <JobDetail job={job}/>
             )}

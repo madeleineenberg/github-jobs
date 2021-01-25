@@ -8,11 +8,12 @@ export default function JobListItem({props: {id, company, title, type, company_u
     
     return (
         <div className="card-container">
-           <Link to={`/job/${id}`}><h2>{title}</h2></Link>
+           <h2>{title}</h2>
             <Logo logo={company_logo}/>
             <span>Company: <a href={company_url} target="blank" rel="noopener">{company}</a></span>
             <p>Type: <strong>{type}</strong> </p>
-            <div dangerouslySetInnerHTML={{__html: description }}></div>
+            <div dangerouslySetInnerHTML={{__html: description.slice(0, 500) }}></div>
+            <Link to={`/job/${id}`}>... Read more <i className="icon-right-big"/></Link>
         </div>
     )
 }

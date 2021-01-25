@@ -7,18 +7,8 @@
 body {
     font-family: 'Inconsolata', monospace;
     background: radial-gradient(at 70% center, #F9B9BD, #c0a6f1);
-    // background: linear-gradient(45deg, #c0a6f1, #F9B9BD);
-    // background: whitesmoke;
     background-attachment: fixed;
     width: 100vw;
     height: 100vh;
 }
 
-.logo-wrapper {
-
-    img {
-        max-width: 200px;
-        height: auto;
-
-    }
-}
