@@ -28,9 +28,8 @@ export default function InputField() {
 
     return (
         <div className="input-container">
-        <label>Find your dream job</label><br/>
         <input type="text"  ref={keywordRef} placeholder="Job Description"/>
-        <button onClick={handleClick}>search</button>
+        <button onClick={handleClick}><i className="icon-search"/></button>
         </div>
     )
 }

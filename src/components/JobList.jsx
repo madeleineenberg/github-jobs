@@ -11,10 +11,10 @@ export default function JobList() {
 
 
     return (
-        <div className="container">     
+        <section className="container">     
             {jobList && jobList.length === 0 && <p>Sorry, no jobs found!</p>}
             {jobList && jobList.map((job) => <JobListItem props={job} key={job.id}/>)}
         
-        </div>
+        </section>
     )
 }

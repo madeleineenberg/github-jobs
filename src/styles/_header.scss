@@ -26,9 +26,6 @@ header {
     
     }
     
-  
-
-
     h1 {
         position: absolute;
         top: 0px;
@@ -51,43 +48,62 @@ header {
 
     .input-container{
         position: absolute;
-        top: 20%;
+        top: 28%;
         left: 50%;
         transform: translate(-50%, -50%);
+        display: flex;
+        background-color: whitesmoke;
+        border: 3px solid peachpuff;
+        border-radius: 20px;
+        box-shadow: 0 1px 15px 0 rgba( 31, 38, 135, 0.37 );
+
+        input {
+            min-width: 300px;
+            border-radius: 20px;
+            background-color: whitesmoke;
+            padding: 10px 20px;
+            border: none;
+            flex: 1;
+            font-family: "Poppins", sans-serif;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: purple;
+
+            &:focus{
+                outline: none;
+            }
+            
+        }
+
+        button {
+            border: none;
+            border-radius: 20px;
+            width: 55px;
+            background-color: #272727;
+            color: whitesmoke;
+            font-size: 20px;
+            cursor: pointer;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        &:before {
+            content: "Find your dream job";
+            font-size: 20px;
+            color: rgb(243, 222, 222);
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top:-40px;
+            left: 65px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+        }
 
     }
 
 }
 
-.card-container{
-align-self: stretch;
-background: rgba( 255, 255, 255, 0.30 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 7.5px );
-border-radius: 10px;
-max-width: 600px;
-padding: 3%;
-margin:  5%; 
-z-index: 1;
-
-// &:before{
-//     content: "Git Hub job";
-//     font-size: 48px;
-//     width: 100%;
-//     height: auto;
-//     color: #F9B9BD;
-//     text-align: center;
-
-// }
-}
-
-.container {
-    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
-
-}
