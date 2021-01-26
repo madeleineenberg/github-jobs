@@ -12,3 +12,22 @@ body {
     height: 100vh;
 }
 
+h1 {
+    position: absolute;
+    top: 0px;
+    left:0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: rgb(243, 222, 222);
+    padding: 25px;
+}
+
+.icon-github-2{
+    font-size: 30px;
+    color: #272727;
+    position: absolute;
+    top: 30px;
+    left:238px;
+}
