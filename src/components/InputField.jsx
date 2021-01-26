@@ -19,7 +19,7 @@ export default function InputField() {
 
     const handleClick = () => {
         const currentKeyword = keywordRef.current.value
-        if(!currentKeyword || value === currentKeyword) return
+        if(!currentKeyword || value === currentKeyword) return keywordRef.current.value = ""
 
         setValue(currentKeyword)
         fetchJobList(currentKeyword)
@@ -28,7 +28,7 @@ export default function InputField() {
 
     return (
         <div className="input-container">
-        <input type="text"  ref={keywordRef} placeholder="Job Description"/>
+        <input type="text" ref={keywordRef} placeholder="Job Description"/>
         <button onClick={handleClick}><i className="icon-search"/></button>
         </div>
     )
