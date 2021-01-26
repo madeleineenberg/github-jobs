@@ -8,7 +8,7 @@ export default function JobListItem({props: {id, company, title, type, company_u
     
     return (
         <div className="card-container">
-           <h2>{title}</h2>
+           <h2 className="card-title">{title}</h2>
             <Logo logo={company_logo}/>
             <span>Company: <a href={company_url} target="blank" rel="noopener">{company}</a></span>
             <p>Type: <strong>{type}</strong> </p>

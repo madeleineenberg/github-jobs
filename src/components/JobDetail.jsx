@@ -5,7 +5,7 @@ export default function JobDetail({job}) {
     return (
         <div className="job-detail">
             <span>{job.type} / {job.location}</span>
-            <h2>{job.title}</h2>
+            <h2 className="job-title">{job.title}</h2>
             <Logo logo={job.company_logo}/>
             <h3>{job.company}</h3>
             <p className="website-link">Website: <a href={job.company_url} target="_blank" rel=" noopener noreferrer">{job.company_url}</a></p>
