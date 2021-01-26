@@ -21,7 +21,12 @@ describe('Test InputField component', () => {
     it("find placeholder text on input", ()=> {
     const wrapper = shallow(<InputField />)
     expect(wrapper.find('input').prop('placeholder')).toEqual('Job Description')
-
     })
+    
+    it('renders an `.icon-search`', () => {
+        const wrapper = shallow(<InputField />);
+        expect(wrapper.find('i').hasClass('icon-search')).toEqual(true)
+      });
+
   });
   
